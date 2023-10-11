@@ -1,7 +1,13 @@
 package hw1;
+/*
+Задача №1
+Дан список целых чисел numbers. Необходимо написать в императивном стиле процедуру для
+сортировки числа в списке в порядке убывания. Можно использовать любой алгоритм сортировки.
 
-public class ImperativeParadigm {
-    public static void sortNumbers(int[] numbers) {
+ */
+    public class ImperativeParadigm {
+
+    public void sortNumbers(int[] numbers) {
         for (int i = 1; i < numbers.length; i++) {
             int key = numbers[i];
             int j = i - 1;
@@ -12,10 +18,7 @@ public class ImperativeParadigm {
             numbers[j + 1] = key;
         }
     }
-
-    public static void main(String[] args) {
-        int[] numbers = {5, 2, 8, 1, 9};
-        sortNumbers(numbers);
+    public void printSortedNumbers(int[] numbers) {
         for (int number : numbers) {
             System.out.print(number + " ");
         }
